@@ -97,6 +97,7 @@ jobs:
           DB_PASSWORD: secret
           REDIS_HOST: 127.0.0.1
           REDIS_PORT: 6379
+          MAIL_MAILER: array
         run: php artisan test
 
       - name: Upload test results
