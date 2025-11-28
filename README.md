@@ -1,5 +1,9 @@
 # TMS - Time Management System
 
+![Tests](https://github.com/lindynetech/tms/actions/workflows/tests.yml/badge.svg)
+![Code Style](https://github.com/lindynetech/tms/actions/workflows/code-style.yml/badge.svg)
+![Docker Build](https://github.com/lindynetech/tms/actions/workflows/docker-build.yml/badge.svg)
+
 A comprehensive multi-user SaaS application for personal productivity and time management. Built on Laravel 12 with a modern Docker architecture.
 
 ## Overview
@@ -385,10 +389,17 @@ docker compose exec app tail -f storage/logs/laravel.log
 
 ## Contributing
 
-1. Create a feature branch from `main`
+1. Create a feature branch from `master`
 2. Make your changes
 3. Run tests: `task test`
 4. Submit a pull request
+
+### Code Review Process
+
+- All PRs automatically request review from `@lindynetech`
+- PRs must pass all CI checks (tests, code style, Docker build)
+- Approval from `@lindynetech` is required before merging
+- Use the PR template to provide complete information
 
 ## Support
 

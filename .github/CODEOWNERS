@@ -1,0 +1,12 @@
+# Code Owners
+# These users will be automatically requested for review when a PR is opened
+
+# Global owners - will be requested for review on all PRs
+* @lindynetech
+
+# Specific paths (optional - uncomment to add specific owners)
+# /.github/ @lindynetech
+# /docker/ @lindynetech
+# /app/ @lindynetech
+# /tests/ @lindynetech
+# /database/ @lindynetech
