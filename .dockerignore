@@ -1,0 +1,16 @@
+vendor/
+node_modules/
+.env
+.git/
+.gitignore
+.gitattributes
+.editorconfig
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+.DS_Store
+Thumbs.db
+compose.yaml
+DOCKER_GUIDE.md
+SETUP_COMPLETE.md

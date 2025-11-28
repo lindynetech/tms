@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Notes Loading</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Testing Notes Section</h1>
+    <div id="notesSection" style="display: none; border: 1px solid #ccc; padding: 20px; margin: 20px;">
+        <h3>Book: <span id="bookTitle"></span></h3>
+        <button id="closeNotes">Close</button>
+        <div id="notesContent"></div>
+    </div>
+    <button onclick="testLoad()">Test Load Notes</button>
+    
+    <script>
+        function testLoad() {
+            console.log('Testing note load function...');
+            $('#bookTitle').text('Test Book');
+            $('#notesContent').html('<p>Testing...</p>');
+            $('#notesSection').slideDown();
+            console.log('Notes section should be visible now');
+        }
+        
+        $('#closeNotes').on('click', function() {
+            console.log('Close button clicked');
+            $('#notesSection').slideUp();
+        });
+        
+        console.log('Test page loaded. Click the button to test.');
+    </script>
+</body>
+</html>
